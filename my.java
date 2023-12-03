@@ -3,23 +3,24 @@ import java.util.Scanner;
 
 public class my {
     public static void main(String[] args) {
-        String[][] cars = new String[3][3];
+        String name = "Bro";
 
-        cars[0][0] = "pakya";
-        cars[0][1] = "htta";
-        cars[0][2] = "mmmm";
-        cars[1][0] = "httgpth";
-        cars[1][1] = "acgpth";
-        cars[1][2] = "kkkk";
-        cars[2][0] = "namasthe";
-        cars[2][1] = "namaskaram";
-        cars[2][2] = "aesgda";
 
-        for (int i = 0 ; i < cars.length; i++){
-            System.out.println();
-            for (int j = 0; j<cars[1].length ; j++){
-                System.out.println(cars[i][j] + " ");
-            }
-        }
+        boolean result = name.equals("bro");
+        boolean result1 = name.equalsIgnoreCase("bro");
+
+        char result2 = name.charAt(0);
+        int result3 = name.indexOf("result2");
+
+        boolean result4 = name.isEmpty();
+        String result5 = name.toUpperCase();
+        String result6 = name.toLowerCase();
+
+        String result7 = name.trim();
+        String result8 = name.replace('o','a');
+
+
+        System.out.println(result2);
+        System.out.println(result3);
     }
 }
