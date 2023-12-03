@@ -1,26 +1,21 @@
 import javax.swing.plaf.synth.SynthTextAreaUI;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class my {
     public static void main(String[] args) {
-        String name = "Bro";
+        ArrayList <String> food = new ArrayList<String>();
 
+        food.add("pakaya");
+        food.add("htta");
+        food.add("hm hm");
 
-        boolean result = name.equals("bro");
-        boolean result1 = name.equalsIgnoreCase("bro");
+        food.set(0 , "kariya");
+        food.remove(2);
+        //food.clear();
 
-        char result2 = name.charAt(0);
-        int result3 = name.indexOf("result2");
-
-        boolean result4 = name.isEmpty();
-        String result5 = name.toUpperCase();
-        String result6 = name.toLowerCase();
-
-        String result7 = name.trim();
-        String result8 = name.replace('o','a');
-
-
-        System.out.println(result2);
-        System.out.println(result3);
+        for (int i = 0; i < food.size(); i++){
+            System.out.println(food.get(i));
+        }
     }
 }
