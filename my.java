@@ -3,27 +3,17 @@ import java.util.Scanner;
 
 public class my {
     public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+         String[] cars = new String[3];
 
-    int rows,columns;
+         cars[0] = "htta";
+         cars[1] = "pnnya";
+         cars[2] = "kkkk";
 
-    String symbol = "";
+         for (int i =0 ; i < cars.length; i++){
+             System.out.println(cars[i]);
+         }
 
-    System.out.println("enter rows");
-    rows = scanner.nextInt();
 
-    System.out.println("enter column: ");
-    columns = scanner.nextInt();
-
-    System.out.println("enter the symbol");
-    symbol = scanner.next();
-
-    for (int i = 0 ; i <= rows ; i++){
-        System.out.println();
-        for (int j = 0 ; j <= columns ; j++){
-            System.out.print(symbol);
-        }
-    }
 
     }
 }
